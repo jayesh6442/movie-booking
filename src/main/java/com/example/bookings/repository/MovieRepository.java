@@ -8,9 +8,8 @@ import java.util.List;
 
 @Repository
 public interface MovieRepository extends JpaRepository<Movie, Long> {
-//    List<Movie> findByTitle(String title);
-//    List<Movie> findByGenre(String genre);
-//    List<Movie> findByLanguage(String language);
-//    List<Movie> findByRatingGreaterThanEqual(Double rating);
-//    List<Movie> findByDurationBetween(Integer minDuration, Integer maxDuration);
-} 
+    List<Movie> findByTitle(String title);
+    List<Movie> findByGenre(String genre);
+    List<Movie> findByLanguage(String language);
+    List<Movie> findByDurationBetween(Integer minDuration, Integer maxDuration);
+}

@@ -8,8 +8,4 @@ import java.util.List;
 
 @Repository
 public interface SeatRepository extends JpaRepository<Seat, Long> {
-//    List<Seat> findByTheatreId(Long theatreId);
-//    List<Seat> findByShowId(Long showId);
-//    List<Seat> findByShowIdAndAvailable(Long showId, boolean available);
-//    List<Seat> findByTheatreIdAndSeatNumber(Long theatreId, String seatNumber);
-} 
+}

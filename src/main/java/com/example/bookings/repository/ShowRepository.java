@@ -9,6 +9,4 @@ import java.util.List;
 
 @Repository
 public interface ShowRepository extends JpaRepository<Show, Long> {
-//    List<Show> findByShowTimeBetween(LocalDateTime start, LocalDateTime end);
-//    List<Show> findByTitle(String title);
-} 
+}
