@@ -10,7 +10,7 @@ public interface MovieService {
     List<Movie> getMoviesByTitle(String title);
     List<Movie> getMoviesByGenre(String genre);
     List<Movie> getMoviesByLanguage(String language);
-    List<Movie> getMoviesByMinRating(Double rating);
+    List<Movie> getMoviesByDurationBetween(Integer minDuration, Integer maxDuration);
     Movie updateMovie(Long id, Movie movie);
     void deleteMovie(Long id);
 } 
