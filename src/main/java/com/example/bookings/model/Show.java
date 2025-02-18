@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 import java.time.LocalDateTime;
 
 @Data
@@ -22,6 +23,7 @@ public class Show {
         this.showTime = showTime;
         this.price = price;
     }
+
 
     @ManyToOne
     @JoinColumn(name = "movie_id", nullable = false)
@@ -70,9 +72,9 @@ public class Show {
     @ManyToOne
     @JoinColumn(name = "theater_id", nullable = false)
     private Theater theater;
-    
+
     @Column(nullable = false)
     private LocalDateTime showTime;
-    
+
     private Double price;
 }
