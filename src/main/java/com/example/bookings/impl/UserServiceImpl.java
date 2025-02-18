@@ -1,9 +1,8 @@
-package com.example.bookings.service;
+package com.example.bookings.impl;
 
-import com.example.bookings.model.Movie;
 import com.example.bookings.model.Users;
-import com.example.bookings.repository.MovieRepository;
 import com.example.bookings.repository.UserRepository;
+import com.example.bookings.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

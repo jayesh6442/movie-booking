@@ -1,11 +1,13 @@
-package com.example.bookings.service;
+package com.example.bookings.impl;
 
 import com.example.bookings.model.Theater;
 import com.example.bookings.repository.TheatreRepository;
+import com.example.bookings.service.TheaterService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class TheaterServiceImpl implements TheaterService {
 
 
