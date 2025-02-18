@@ -14,7 +14,6 @@ import lombok.*;
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
 public class Movie {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -37,6 +36,15 @@ public class Movie {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Movie(Long id, String title, String description, String genre, Integer duration, String language) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.genre = genre;
+        this.duration = duration;
+        this.language = language;
     }
 
     public String getTitle() {
